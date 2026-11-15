@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TODAY'S SPOTLIGHT | 今日の主役</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;
+  color:#202323;
+  background:#f7f7f4;
+}
+header{
+  height:76px;
+  padding:0 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #e7e7e2;
+  background:#fff;
+}
+.logo{
+  font-size:19px;
+  font-weight:800;
+  letter-spacing:1.5px;
+}
+.logo span{color:#b18a55}
+nav{display:flex;gap:28px;align-items:center}
+nav a{
+  color:#555;
+  text-decoration:none;
+  font-size:13px;
+}
+.nav-button{
+  background:#222927;
+  color:white;
+  padding:12px 20px;
+  border-radius:3px;
+  font-size:12px;
+}
+.hero{
+  text-align:center;
+  padding:100px 20px 85px;
+  background:#eaece7;
+}
+.eyebrow{
+  font-size:11px;
+  letter-spacing:4px;
+  color:#8d7755;
+  font-weight:700;
+}
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(48px,8vw,92px);
+  font-weight:400;
+  letter-spacing:2px;
+  margin:25px 0 12px;
+}
+.hero h1 span{color:#a98755}
+.hero p{
+  font-size:14px;
+  line-height:2.2;
+  color:#656a65;
+}
+.date{
+  margin-top:38px;
+  font-family:Georgia,serif;
+  font-size:17px;
+  color:#6e715f;
+}
+.main{
+  max-width:1000px;
+  margin:0 auto;
+  padding:75px 25px;
+}
+.section-label{
+  font-size:11px;
+  letter-spacing:3px;
+  color:#a18358;
+  font-weight:700;
+}
+.section-title{
+  font-size:29px;
+  font-weight:500;
+  margin:12px 0 30px;
+}
+.spotlight{
+  background:white;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:330px;
+  border:1px solid #e9e8e2;
+}
+.spotlight-visual{
+  background:#dfe3dc;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:280px;
+  color:#657064;
+  font-family:Georgia,serif;
+  font-size:64px;
+}
+.spotlight-info{
+  padding:45px 38px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.tag{
+  font-size:10px;
+  letter-spacing:2px;
+  color:#a18358;
+}
+.spotlight-info h3{
+  font-size:25px;
+  font-weight:500;
+  margin:18px 0 12px;
+}
+.spotlight-info p{
+  font-size:13px;
+  line-height:2;
+  color:#777;
+}
+.concept{
+  margin-top:85px;
+  padding:60px 25px;
+  text-align:center;
+  background:#222927;
+  color:white;
+}
+.concept h2{
+  font-family:Georgia,serif;
+  font-size:34px;
+  font-weight:400;
+  margin:18px 0;
+}
+.concept p{
+  font-size:13px;
+  line-height:2.3;
+  color:#c5cbc5;
+}
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:35px;
+}
+.feature{
+  background:white;
+  border:1px solid #e9e8e2;
+  padding:30px 20px;
+}
+.feature strong{
+  font-family:Georgia,serif;
+  font-size:28px;
+  color:#a18358;
+}
+.feature h3{font-size:15px;font-weight:600}
+.feature p{
+  font-size:12px;
+  line-height:2;
+  color:#777;
+}
+footer{
+  padding:35px 20px;
+  text-align:center;
+  font-size:10px;
+  letter-spacing:2px;
+  color:#999;
+  border-top:1px solid #e7e7e2;
+}
+@media(max-width:650px){
+  header{padding:0 18px;height:65px}
+  nav{gap:12px}
+  nav a{display:none}
+  .nav-button{padding:10px 12px}
+  .hero{padding:75px 18px}
+  .main{padding:55px 18px}
+  .spotlight{grid-template-columns:1fr}
+  .spotlight-visual{min-height:200px}
+  .spotlight-info{padding:30px 24px}
+  .features{grid-template-columns:1fr}
+  .concept{padding:50px 20px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">TODAY'S <span>SPOTLIGHT</span></div>
+  <nav>
+    <a href="#today">今日の主役</a>
+    <a href="#about">このサービスについて</a>
+    <a href="#features">特徴</a>
+    <a href="#about" class="nav-button">サービスを見る</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">365 DAYS · 365 STORIES</div>
+  <h1>Today is <span>Yours.</span></h1>
+  <p>
+    誰にでも、主役になれる日がある。<br>
+    あなたの想いを、今日という特別な日に。
+  </p>
+  <div class="date">ONE DAY. ONE STORY.</div>
+</section>
+
+<main class="main" id="today">
+  <div class="section-label">TODAY'S SPOTLIGHT</div>
+  <h2 class="section-title">今日の主役</h2>
+
+  <div class="spotlight">
+    <div class="spotlight-visual">365</div>
+    <div class="spotlight-info">
+      <div class="tag">YOUR SPECIAL DAY</div>
+      <h3>今日は、あなたが主役。</h3>
+      <p>
+        会社も、お店も、個人も。<br>
+        伝えたいこと、届けたい想い、<br>
+        あなたらしいストーリーを自由に発信する。<br>
+        ここから新しい出会いが始まります。
+      </p>
+    </div>
+  </div>
+
+  <section class="concept" id="about">
+    <div class="section-label">OUR CONCEPT</div>
+    <h2>365 days. 365 opportunities.</h2>
+    <p>
+      365日、それぞれの日に、それぞれの主役がいる。<br>
+      商品の魅力も、作品への想いも、人生の大切な瞬間も。<br>
+      誰かの「伝えたい」を、みんなの「見つけた」に。
+    </p>
+  </section>
+
+  <section id="features" style="margin-top:75px">
+    <div class="section-label">POSSIBILITIES</div>
+    <h2 class="section-title">発信できることは、自由。</h2>
+    <div class="features">
+      <div class="feature">
+        <strong>01</strong>
+        <h3>BUSINESS</h3>
+        <p>会社や店舗の商品、サービス、イベントの紹介。</p>
+      </div>
+      <div class="feature">
+        <strong>02</strong>
+        <h3>CREATION</h3>
+        <p>作品、デザイン、活動、あなたの才能や個性。</p>
+      </div>
+      <div class="feature">
+        <strong>03</strong>
+        <h3>STORY</h3>
+        <p>誕生日、プロポーズ、日常。人生の大切な瞬間。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  TODAY'S SPOTLIGHT · EVERYONE DESERVES A DAY
+</footer>
+
+</body>
+</html>
